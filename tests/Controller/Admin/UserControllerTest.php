@@ -69,7 +69,7 @@ class UserControllerTest extends WebTestCase
 
     public function getUrlsForRegularUsers(): \Generator
     {
-        yield ['GET', '/en/admin/post/'];
+        yield ['GET', '/en/admin/user/'];
     }
 
     public function testAdminBackendHomePage(): void
