@@ -17,7 +17,7 @@
         </button>
         {{ form_widget(form.saveAndCreateNew, {label: 'label.save_and_create_new', attr: {class: 'btn btn-primary'}}) }}
         <a href="{{ path('admin_post_index') }}" class="btn btn-link">
-            <i class="fa fa-list-alt" aria-hidden="true"></i> {{ 'action.back_to_list'|trans }}
+            <i class="fa fa-list-alt" aria-hidden="true"></i> {{ 'action.back_to_post_list'|trans }}
         </a>
     {{ form_end(form) }}
 {% endblock %}

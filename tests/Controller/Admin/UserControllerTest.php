@@ -70,6 +70,7 @@ class UserControllerTest extends WebTestCase
     public function getUrlsForRegularUsers(): \Generator
     {
         yield ['GET', '/en/admin/user/'];
+        yield ['GET', '/en/admin/user/new'];
     }
 
     public function testAdminBackendHomePage(): void
@@ -81,5 +82,33 @@ class UserControllerTest extends WebTestCase
             'body#admin_user_index #main tbody tr',
             'The backend homepage displays all the available users.'
         );
+    }
+
+    public function testAdminBackendNewUser(): void
+    {
+        $username = 'username';
+        $fullName = 'John Doe';
+        $email = '9vQpX@example.com';
+        $password = 'p4Ssw0rd';
+        
+
+        $this->client->request('GET', '/en/admin/user/new');
+        $this->client->submitForm('Create user', [
+            'user[username]' => $username,
+            'user[fullName]' => $fullName,
+            'user[email]' => $email,
+            'user[password][first]' => $password,
+            'user[password][second]' => $password,
+        ]);
+
+        $this->assertResponseRedirects('/en/admin/user/');
+
+        $userRepository = $this->client->getContainer()->get(UserRepository::class);
+        $users = $userRepository->findBy(['username' => $username]);
+
+        $this->assertCount(1, $users);
+        $this->assertSame($fullName, $users[0]->getFullName());
+        $this->assertSame($email, $users[0]->getEmail());
+        $this->assertTrue(password_verify($password, $users[0]->getPassword()));
     }
 }

@@ -157,13 +157,25 @@
                 <source>action.create_post</source>
                 <target>Créer un nouvel article</target>
             </trans-unit>
+            <trans-unit id="action.create_user">
+                <source>action.create_user</source>
+                <target>Créer un nouvel utilisateur</target>
+            </trans-unit>
+            <trans-unit id="label.create_user">
+                <source>action.create_user</source>
+                <target>Créer un utilisateur</target>
+            </trans-unit>
             <trans-unit id="label.save_and_create_new">
                 <source>label.save_and_create_new</source>
                 <target>Enregistrer et créer un nouveau</target>
             </trans-unit>
-            <trans-unit id="action.back_to_list">
-                <source>action.back_to_list</source>
+            <trans-unit id="action.back_to_post_list">
+                <source>action.back_to_post_list</source>
                 <target>Retour à la liste des articles</target>
+            </trans-unit>
+            <trans-unit id="action.back_to_user_list">
+                <source>action.back_to_user_list</source>
+                <target>Retour à la liste des utilisateurs</target>
             </trans-unit>
             <trans-unit id="action.publish_comment">
                 <source>action.publish_comment</source>
@@ -238,6 +250,10 @@
                 <source>label.new_password_confirm</source>
                 <target>Confirmer le mot de passe</target>
             </trans-unit>
+            <trans-unit id="label.password_confirm">
+                <source>label.password_confirm</source>
+                <target>Confirmer le mot de passe</target>
+            </trans-unit>
             <trans-unit id="label.role">
                 <source>label.role</source>
                 <target>Rôle</target>
@@ -265,6 +281,10 @@
             <trans-unit id="title.post_new">
                 <source>title.post_new</source>
                 <target>Ajouter un nouvel article</target>
+            </trans-unit>
+            <trans-unit id="title.user_new">
+                <source>title.user_new</source>
+                <target>Ajouter une nouvel utilisateur</target>
             </trans-unit>
             <trans-unit id="action.edit_contents">
                 <source>action.edit_contents</source>
@@ -364,6 +384,10 @@
             <trans-unit id="user.no_users_found">
                 <source>user.no_users_found</source>
                 <target>Aucun utilisateur trouvé.</target>
+            </trans-unit>
+            <trans-unit id="user.created_successfully">
+                <source>user.created_successfully</source>
+                <target>Utilisateur créé avec succès !</target>
             </trans-unit>
 
             <trans-unit id="notification.comment_created">
