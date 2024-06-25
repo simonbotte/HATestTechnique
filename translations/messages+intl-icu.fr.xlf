@@ -92,6 +92,10 @@
                 <source>title.comment_error</source>
                 <target>Il y a eu une erreur lors de la publication de votre commentaire.</target>
             </trans-unit>
+            <trans-unit id="title.user_list">
+                <source>title.user_list</source>
+                <target>Liste des utilisateurs</target>
+            </trans-unit>
             <trans-unit id="title.edit_user">
                 <source>title.edit_user</source>
                 <target>Modifier l'utilisateur</target>
@@ -279,6 +283,10 @@
                 <source>menu.post_list</source>
                 <target>Liste des articles</target>
             </trans-unit>
+            <trans-unit id="menu.user_list">
+                <source>menu.user_list</source>
+                <target>Liste des utilisateurs </target>
+            </trans-unit>
             <trans-unit id="menu.back_to_blog">
                 <source>menu.back_to_blog</source>
                 <target>Retour au blog</target>
@@ -352,6 +360,10 @@
             <trans-unit id="user.updated_successfully">
                 <source>user.updated_successfully</source>
                 <target>Informations mises à jour avec succès !</target>
+            </trans-unit>
+            <trans-unit id="user.no_users_found">
+                <source>user.no_users_found</source>
+                <target>Aucun utilisateur trouvé.</target>
             </trans-unit>
 
             <trans-unit id="notification.comment_created">

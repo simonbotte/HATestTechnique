@@ -13,6 +13,11 @@
 {% endblock %}
 
 {% block header_navigation_links %}
+    <li class="nav-item{{ _route in ['admin_user_index'] ? ' active' : '' }}">
+        <a class="nav-link" href="{{ path('admin_user_index') }}">
+            <i class="fa fa-list-alt" aria-hidden="true"></i> {{ 'menu.user_list'|trans }}
+        </a>
+    </li>
     <li class="nav-item{{ _route in ['admin_index', 'admin_post_index'] ? ' active' : '' }}">
         <a class="nav-link" href="{{ path('admin_post_index') }}">
             <i class="fa fa-list-alt" aria-hidden="true"></i> {{ 'menu.post_list'|trans }}

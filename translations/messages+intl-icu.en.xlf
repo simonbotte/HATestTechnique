@@ -92,6 +92,10 @@
                 <source>title.comment_error</source>
                 <target>There was an error publishing your comment</target>
             </trans-unit>
+            <trans-unit id="title.user_list">
+                <source>title.user_list</source>
+                <target>User List</target>
+            </trans-unit>
             <trans-unit id="title.edit_user">
                 <source>title.edit_user</source>
                 <target>Edit user</target>
@@ -279,6 +283,10 @@
                 <source>menu.post_list</source>
                 <target>Post list</target>
             </trans-unit>
+            <trans-unit id="menu.user_list">
+                <source>menu.user_list</source>
+                <target>User list</target>
+            </trans-unit>
             <trans-unit id="menu.back_to_blog">
                 <source>menu.back_to_blog</source>
                 <target>Back to blog</target>
@@ -352,6 +360,10 @@
             <trans-unit id="user.updated_successfully">
                 <source>user.updated_successfully</source>
                 <target>User updated successfully!</target>
+            </trans-unit>
+            <trans-unit id="user.no_users_found">
+                <source>user.no_users_found</source>
+                <target>No posts found.</target>
             </trans-unit>
 
             <trans-unit id="notification.comment_created">
